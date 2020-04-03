@@ -28,7 +28,7 @@ for (let y=18; y>0; y--) {
 }
 
 let x = 5, y = 15;
-var speed = 300;
+var speed = 600;
 let mainArr = [
     //палка
     [
@@ -379,15 +379,15 @@ function move(){
                         score+=10;
                         if(score>10)
                         {
-                            speed+100;
+                            speed-100;
                         };
                         if(score>30)
                         {
-                            speed+400;
+                            speed-200;
                         };
                         if(score>50)
                         {
-                            speed+1000;
+                            speed-100;
                         };
                         input.value = `Ваши очки : ${score}`;
                         for(let m=1;m<11;m++){
