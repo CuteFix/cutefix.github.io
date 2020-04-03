@@ -420,11 +420,6 @@ function move(){
         for(let n=1;n<11;n++){
             if(document.querySelector(`[posX= "${n}"][posY= "15"]`).classList.contains('set')){
                 var isResizeble = false;
-                if(!isResizeble) {
-                    clearInterval(interval);
-                    isRezeble = true;
-                }
-                
                 for(let n=1;n<set.length;n++){
                 set[n].classList.remove('set'); //очистка координат
                 }
@@ -477,7 +472,7 @@ function move(){
                     {
                         alert('Вы не попали в таблицу рекордов')
                     }
-                    let interval = setInterval(() => {move();}, speed);
+                    clearInterval(interval);
                     restartGame();
                     break;
             } 
