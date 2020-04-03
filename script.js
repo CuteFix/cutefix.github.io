@@ -380,15 +380,15 @@ function move(){
                         score+=10;
                         if(score>10)
                         {
-                            speed-200;
+                            speed-400;
                         };
                         if(score>30)
                         {
-                            speed-200;
+                            speed-400;
                         };
                         if(score>50)
                         {
-                            speed-300;
+                            speed-400;
                         };
                         input.value = `Ваши очки : ${score}`;
                         for(let m=1;m<11;m++){
