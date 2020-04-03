@@ -4,6 +4,11 @@ localStorage.setItem("name1", JSON.stringify(name1));
 document.cookie = "name=name1";
 var arguments = [0,0,0,0,0];
 var speed = 800;
+function restartGame(){
+    var name1 = "";
+    name1 = prompt("Введи новое имя");
+    localStorage.setItem("name1", JSON.stringify(name1));
+}
 function startGame(){
 //Создаём поле
 let tetris = document.createElement('div');
@@ -472,7 +477,8 @@ function move(){
                     {
                         alert('Вы не попали в таблицу рекордов')
                     }
-                    
+                    let interval = setInterval(() => {move();}, speed);
+                    restartGame();
                     break;
             } 
             
