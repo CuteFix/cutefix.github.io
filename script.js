@@ -3,9 +3,7 @@ name1 = prompt("Введи имя");
 localStorage.setItem("name1", JSON.stringify(name1));
 document.cookie = "name=name1";
 var arguments = [0,0,0,0,0];
-var speed = 0;
 function startGame(){
-speed = 300;
 //Создаём поле
 let tetris = document.createElement('div');
 tetris.classList.add('tetris');
@@ -30,7 +28,7 @@ for (let y=18; y>0; y--) {
 }
 
 let x = 5, y = 15;
-
+var speed = 300;
 let mainArr = [
     //палка
     [
@@ -381,15 +379,15 @@ function move(){
                         score+=10;
                         if(score>10)
                         {
-                            speed+200;
+                            speed+100;
                         };
                         if(score>30)
                         {
-                            speed+200;
+                            speed+400;
                         };
                         if(score>50)
                         {
-                            speed+300;
+                            speed+1000;
                         };
                         input.value = `Ваши очки : ${score}`;
                         for(let m=1;m<11;m++){
