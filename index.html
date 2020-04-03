@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <h1 class='title'>Tetris</h1>
+    
+</head>
+
+<body>
+    <button class="batton" onclick="startGame()">Play</button>
+    <div class="main">
+
+    </div>
+    <input type="text" readonly>
+    <div class="controls">
+        <h2>Управление</h2>
+        <p>W - перевернуть фигуру</p>
+        <p>A - подвинуть фигуру влево</p>
+        <p>D - подвинуть фигуру вправо</p>
+        <p>S - ускорить фигуру вниз</p>
+    </div>
+    <!-- Highscore Modal -->
+    <div id="hsModal" class="modal">
+            <table id='highscores'>
+                <tr>
+                    <td>Name</td>
+                    <td>Score</td>
+                </tr>
+                <tr>
+                    <td><h4 class='name1'> <div id='name1'></div></h4></td>
+                    <td><h4 class='hs1'> <div id='hs1'></div></h4></td>
+                </tr>
+                <tr>
+                    <td><h4 class='name2'><div id='name2'></div></h4></td>
+                    <td><h4 class='hs2'><div id='hs2'></div></h4></td>
+
+                </tr>
+                <tr>
+                    <td><h4 class='name3'><div id='name3'></div></h4></td>
+                    <td><h4 class='hs3'><div id='hs3'></div></h4></td>
+                </tr>
+                <tr>
+                    <td><h4 class='name4'><div id='name4'></div></h4></td>
+                    <td><h4 class='hs4'></h4><div id='hs4'></div></td>
+                </tr>
+                <tr>
+                    <td><h4 class='name5'><div id='name5'></div></h4></td>
+                    <td><h4 class='hs5'><div id='hs5'></div></h4></td>
+                </tr>
+            </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
