@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+/*Класс main отображете видимую часть тетриса*/
+.title {
+    font-size: 50pt;
+    font-style: arial;
+    color: darkorchid;
+    text-shadow: 4px 3px black;
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+}
+.batton {
+    font-size: 20pt;
+    font-style: arial;
+    color: darkorchid;
+    text-align: center;
+    margin: 40px;
+}
+.main
+{
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    width: 500px;/*Ширина 500 пикселей*/
+    height: 700px;/*Высота 700 пикселей*/
+    border: 1px solid #000; /*Граница*/
+}
+/*tetris генерация за пределами*/
+.tetris {
+    width: 500px;/*Ширина 500 пикселей*/
+    height: 900px;/*Высота 900 пикселей*/
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background-color: honeydew;
+}
+/*Excel отрисовка ячеек, рядов 18*/
+.excel{
+    width: 50px;
+    height: 50px;
+    border: 1px solid darkgray;
+}
+/*Отрисовка фигур*/
+.figure, .set{
+    background-color: darkorchid;
+}
+input{
+    display: block;
+    margin: 50px auto;
+    font-size: 50px;
+    padding: 10px;
+}
+.controls {
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 200px;
+}
+
+td {
+    width: 10%;
+    height: 5%;
+    border: 1px solid black;
+    margin: 50px;
+}
